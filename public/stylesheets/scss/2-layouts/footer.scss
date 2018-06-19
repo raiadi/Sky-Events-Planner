@@ -1,0 +1,36 @@
+/* Footer */
+footer{
+  width: 100%;
+  margin-top: 20px;
+  div{
+    //font-size: 0.9em;
+    color: $dark;
+    div{
+      >ul{
+        >li{
+          text-align: center;
+          padding: 0 10px;
+          border-right: 1px solid $dark;
+          li{
+            color: $primaryShade;
+            margin: 0.5em;
+          }
+        }
+        >li:last-of-type{
+          border: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 456px){
+  footer{
+    div{
+      >ul{
+        >li{
+          display: block;
+        }
+      }
+    }
+  }
+}

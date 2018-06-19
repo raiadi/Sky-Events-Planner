@@ -1,0 +1,59 @@
+/* Base */
+body{
+  position: relative;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  background-color: #e8e4e3;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.618em;
+}
+
+li{
+  display: inline-block;
+  list-style: none;
+}
+
+a,a:link {
+  text-decoration: none;
+  width:100%;
+  text-align: center;
+  color: $white;
+  padding: 0;
+}
+
+a:hover{
+  color: $primaryDark;
+}
+
+.full{
+  width:100%;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 2.1 Containers & Columns */
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* 2.2 Navigation */
+
+.nav {
+  //list-style: none;
+}

@@ -1,0 +1,83 @@
+/* 1.3 Typography */
+
+html{
+  font-size: 16px;
+  line-height: 1.618;
+}
+
+h3, h4, h5, h6, p {
+  font-family: Montserrat-Reg, sans-serif;
+  color: $dark;
+  margin: 0 0 .618em;
+  font-weight: normal;
+}
+
+h1, h2,  {
+  font-family: Tangerine-Bold, serif;
+  color: $dark;
+  margin: 0 0 .618em;
+  font-weight: normal;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: normal;
+}
+
+h1 {                //Titles
+  font-size: 3em;
+  line-height: 1.387em;
+  color: $primaryDark;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.387em;
+}
+
+h3 {                  //Sub-headings
+  font-size: 1.387em;
+  color: $primaryDark;
+}
+
+h4 {                  //Button
+  font-size: 1em;
+  color: $white;
+}
+
+h5 {
+  font-size: 1em;
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.857em;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
+  -webkit-hyphenate-limit-after: 1;
+  -webkit-hyphenate-limit-before: 3;
+  -moz-hyphens: auto;
+  orphans: 3;
+  widows: 3;
+  font-size: 1em;
+}
+
+.quote {
+  h2{
+    font-family: Tangerine-Bold;
+  }
+}
+
+/* 1.3.1 Typefaces */
+
+@font-face {
+  font-family: Montserrat-Reg;
+  src: url("fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Tangerine-Bold;
+  src: url("fonts/Tangerine/Tangerine-Bold.ttf");
+}

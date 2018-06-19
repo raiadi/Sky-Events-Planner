@@ -1,0 +1,73 @@
+/* Services */
+
+
+#services{
+  margin-top: 460px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1em;
+  grid-template-areas:
+  "ti ti ti ti"
+  "mn mn mn mn"
+  "fo fo fo fo";
+  background-color: $white;
+  div{
+
+  }
+  h1,h2,h3,p{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .stitle{
+    grid-area: ti;
+    padding-top: 20px;
+  }
+  .smain{
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(180px, auto);
+    align-items: center;
+    grid-gap: 3em;
+    div{
+      padding: 10px 20px;
+    }
+    h3:after {
+    content: '';
+    display: block;
+    background: $primaryDark;
+    height: 2px;
+    max-width: 5em;
+    margin: 0.5em auto 0;
+}
+  }
+  .sform{
+    grid-column: fo;
+    align-self:center;
+  }
+}
+@media screen and (max-width: 770px){
+  #services{
+    margin-top: 255px;
+  }
+}
+@media screen and (max-width: 456px){
+  .hero{
+    display: none;
+  }
+  #services{
+    margin-top:0;
+    .smain{
+      grid-area: mn;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(180px, auto);
+      align-items: center;
+      grid-gap: 3em;
+      div{
+        padding: 10px 20px;
+      }
+    }
+  }
+}

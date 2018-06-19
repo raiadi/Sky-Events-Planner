@@ -1,0 +1,43 @@
+/* 3.3 Forms */
+
+label{
+  height: 1.5em;
+}
+input{
+  height: 3em;
+  padding: 0.4em;
+}
+textarea{
+  padding: 0.4em;
+}
+submit{
+  background-color: $primaryDark;
+  color: $white;
+}
+.sform{
+  form{
+    >input{
+      display: block;
+      width: 30em;
+      margin: 1em auto;
+    }
+    submit{
+      display: block;
+      width: 15em;
+    }
+  }
+}
+
+.pform{
+  form{
+    >input{
+      display: block;
+      width: 30em;
+      margin: 1em auto;
+    }
+    submit{
+      display: block;
+      width: 15em;
+    }
+  }
+}

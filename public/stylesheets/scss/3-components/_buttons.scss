@@ -1,0 +1,20 @@
+
+/* Buttons */
+button:hover{
+  cursor: pointer;
+}
+
+.btn{
+  display: block;
+  height: auto;
+  width: auto;
+  padding: 5px;
+  vertical-align: middle;
+  background-color: $primaryShade;
+  font-size: 1em;
+  color: $light;
+}
+
+.btn-square {
+
+}
