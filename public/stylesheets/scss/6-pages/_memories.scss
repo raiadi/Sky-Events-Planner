@@ -1,9 +1,9 @@
 /* Page - Memories */
 
 #memories {
-  padding: 60px 0;
+  padding: 40px 0;
   .mtitle{
-
+    margin: 2em auto 3em;
   }
   .mmain{
     display: grid;
@@ -16,7 +16,9 @@
 
 @media screen and (max-width: 796px) {
   #memories {
+    padding: 0px 0;
     .mtitle{
+      padding: 0 5px;
     }
     .mmain{
       display: grid;

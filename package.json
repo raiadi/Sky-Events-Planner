@@ -1,0 +1,26 @@
+{
+  "name": "sep",
+  "version": "1.0.0",
+  "description": "Sky Events Planner is a family owned business specialising in Weddings",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raiadi/nepali-mandap.git"
+  },
+  "author": "Adarsh Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raiadi/nepali-mandap/issues"
+  },
+  "homepage": "https://github.com/raiadi/nepali-mandap#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6"
+  }
+}

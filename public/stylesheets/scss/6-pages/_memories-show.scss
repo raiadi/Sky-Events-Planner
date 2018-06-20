@@ -1,0 +1,18 @@
+/* Memories Show Page */
+
+#memories-show{
+  padding: 40px 0;
+  .mstitle{
+    margin: 2em auto 3em;
+  }
+  .msmain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4em;
+    div{
+      width: 100%;
+      max-width: 756px;
+      margin: 0 auto;
+    }
+  }
+}

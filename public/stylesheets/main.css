@@ -46,11 +46,13 @@ h3 {
 
 h4 {
   font-size: 1em;
-  color: #fcfcfc; }
+  color: #7e7e7d;
+  margin: 0; }
 
 h5 {
   font-size: 1em;
-  margin: 0; }
+  margin: 0;
+  color: #fcfcfc; }
 
 h6 {
   font-size: 0.857em; }
@@ -64,6 +66,9 @@ p {
   orphans: 3;
   widows: 3;
   font-size: 1em; }
+
+a {
+  font-family: Montserrat-Reg, sans-serif; }
 
 .quote h2 {
   font-family: Tangerine-Bold; }
@@ -151,14 +156,19 @@ header {
     background-color: #b28666; }
 
 .display {
+  display: block !important;
   height: auto !important; }
 
 .mobile {
   display: none;
+  height: 0px;
   background-color: #fcfcfc;
-  color: #b28666; }
+  color: #b28666;
+  transition: all 8s ease-in-out 2s; }
   .mobile ul li {
-    display: block; }
+    display: none;
+    height: 0px;
+    transition: height 8s ease-in-out 2s; }
 
 .head-invert {
   color: #fcfcfc;
@@ -217,7 +227,7 @@ header:hover, header div:hover, #header:hover {
     display: block; }
 
   .mobile {
-    display: block;
+    display: none;
     height: 0px;
     transition: all 8000ms ease-in-out 2s;
     background-color: #fcfcfc;
@@ -275,10 +285,21 @@ submit {
   background-color: #b28666;
   color: #fcfcfc; }
 
+form {
+  margin-top: 2rem; }
+  form input {
+    border: 2px solid #f6decd;
+    box-shadow: 0px 1px 1px #d3b097; }
+  form textarea {
+    border: 2px solid #f6decd;
+    box-shadow: 0px 1px 1px #d3b097; }
+
 .sform form > input {
   display: block;
   width: 30em;
   margin: 1em auto; }
+.sform form textarea {
+  width: 30em; }
 .sform form submit {
   display: block;
   width: 15em; }
@@ -378,7 +399,9 @@ submit {
         padding: 10px 20px; } }
 /* Page - Memories */
 #memories {
-  padding: 60px 0; }
+  padding: 40px 0; }
+  #memories .mtitle {
+    margin: 2em auto 3em; }
   #memories .mmain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -387,18 +410,36 @@ submit {
     padding: 0.5em; }
 
 @media screen and (max-width: 796px) {
-  #memories .mmain {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+  #memories {
+    padding: 0px 0; }
+    #memories .mtitle {
+      padding: 0 5px; }
+    #memories .mmain {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
 @media screen and (max-width: 456px) {
   #memories .mmain {
     display: grid;
     grid-template-columns: 1fr; } }
+/* Memories Show Page */
+#memories-show {
+  padding: 40px 0; }
+  #memories-show .mstitle {
+    margin: 2em auto 3em; }
+  #memories-show .msmain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4em; }
+    #memories-show .msmain div {
+      width: 100%;
+      max-width: 756px;
+      margin: 0 auto; }
+
 /* Plan Page */
 #plan {
-  margin-top: 460px;
+  margin-top: 0px;
   background-color: #fcfcfc; }
   #plan .ptitle {
-    padding-top: 20px; }
+    padding: 20px 5px 0; }
 
 /*# sourceMappingURL=main.css.map */

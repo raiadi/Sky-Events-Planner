@@ -5,7 +5,7 @@ html{
   line-height: 1.618;
 }
 
-h3, h4, h5, h6, p {
+h3, h4, h5, h6, p{
   font-family: Montserrat-Reg, sans-serif;
   color: $dark;
   margin: 0 0 .618em;
@@ -39,17 +39,20 @@ h3 {                  //Sub-headings
   color: $primaryDark;
 }
 
-h4 {                  //Button
+h4 {                  //image titles & footer
   font-size: 1em;
-  color: $white;
-}
-
-h5 {
-  font-size: 1em;
+  color: $dark;
   margin: 0;
 }
 
-h6 {
+h5 {                  //form submit button
+  font-size: 1em;
+  margin: 0;
+  color: $white;
+
+}
+
+h6 {                   //footer
   font-size: 0.857em;
 }
 
@@ -62,6 +65,10 @@ p {
   orphans: 3;
   widows: 3;
   font-size: 1em;
+}
+
+a {
+  font-family: Montserrat-Reg, sans-serif;
 }
 
 .quote {
