@@ -1,5 +1,4 @@
-var 
-    bodyParser  = require("body-parser"),
+var bodyParser  = require("body-parser"),
     mongoose    = require("mongoose"),
     express     = require("express"),
     app         = express();
@@ -10,7 +9,7 @@ app.use(express.static(__dirname + "/public"));
 /* Setup Mongoose */
 
 //Connect
-mongoose.connect("mongodb://localhost/memories");
+//mongoose.connect("mongodb://localhost/memories", { useNewUrlParser: true });
 
 //Build Schema
 var memoriesSchema = new mongoose.Schema({
@@ -22,7 +21,7 @@ var memoriesSchema = new mongoose.Schema({
 });
 
 //Build Model
-var Memories = mongoose.model("Memories", memoriesSchema);
+//var Memories = mongoose.model("Memories", memoriesSchema);
 
 
 /* Restful Routes */
@@ -76,6 +75,6 @@ app.get("*", function(req,res){
 
 
 /* Connect to Server */  
-app.listen(process.env.PORT, process.env.IP, function(req,res){
+app.listen(process.env.PORT || 5000, function(req,res){
     console.log("SERVER HAS NOW STARTED");
 });
